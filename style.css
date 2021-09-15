@@ -1,0 +1,91 @@
+#calc{
+    border: slategray solid 10px;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:slategray solid 10px
+}
+#pantalla{
+    background-color: seashell;
+text-align: end;    font-size: 2rem;
+    width: 100%;
+   height: 150px;
+   border: greenyellow solid;
+   border-radius: 15px;
+ 
+}
+
+#panel{
+
+padding-top: 30px;
+ margin-top: 20px;
+ padding-bottom: 0;
+  margin-right: 0px;
+}
+
+
+
+.col-2{
+    height: 100%;
+    background-color: snow;
+    padding: 10px;
+    border: black solid 0.1px;
+    text-align: center;
+    border-radius: 16px;
+    text-align: center;
+  height: 50px;
+  margin: 2.5px;
+}
+
+.col-1{
+ 
+    border: black solid 0.1px;
+    text-align: center;
+    border-radius: 16px;
+    text-align: center;
+  height: 50px;
+  margin: 1.5px;
+   
+
+}
+
+
+
+#del{
+    text-align: center;
+    padding: 10px;
+    background-color:#FFC300;
+}
+
+#AC{
+   
+    padding: 10px;
+    background-color: #F34747;
+   font-weight: bold;
+    }
+
+
+    @media (max-width:600px) {
+        #calc{
+          width: 70%;
+          font-size: 15px;
+        }
+    }
+
+
+@media (min-width:600px) {
+    #calc{
+      width: 23%;
+     
+    }
+    #AC{
+        font-size: 12px;
+    }
+    #del{
+        font-size: 12px;
+    }
+}
+
+
