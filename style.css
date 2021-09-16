@@ -25,22 +25,23 @@ padding-top: 30px;
   margin-right: 0px;
 }
 
-
-
 .col-2{
-    height: 100%;
-    background-color: snow;
-    padding: 10px;
-    border: black solid 0.1px;
+    margin: 1px;
+    margin-top: 10px;
+}
+
+.btn-circle.btn-md {
+    width: 45px;
+    height: 45px;
+    border-radius: 35px;
+    font-size: 15px;
     text-align: center;
-    border-radius: 16px;
-    text-align: center;
-  height: 50px;
-  margin: 2.5px;
+    background-color: darkcyan;
+    font-weight: bold;
+    align-items: center;
 }
 
 .col-1{
- 
     border: black solid 0.1px;
     text-align: center;
     border-radius: 16px;
@@ -52,33 +53,41 @@ padding-top: 30px;
 }
 
 
-
 #del{
     text-align: center;
     padding: 10px;
     background-color:#FFC300;
 }
 
-#AC{
-   
-    padding: 10px;
+#ac{
+
     background-color: #F34747;
    font-weight: bold;
     }
 
 
-    @media (max-width:600px) {
-        #calc{
-          width: 70%;
-          font-size: 15px;
-        }
-    }
 
 
-@media (min-width:600px) {
+
+@media (min-width:440px) {
     #calc{
-      width: 23%;
-     
+    
+     width: 327px;
+    }
+    #AC{
+        font-size: 12px;
+    }
+    #del{
+        font-size: 12px;
+    }
+}
+
+
+
+@media (min-width:1254px) {
+    #calc{
+   
+     width: 327px;
     }
     #AC{
         font-size: 12px;
