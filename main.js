@@ -66,10 +66,10 @@ function borrar() {
     sec1.textContent = "";
 }
 function punto() {
-    if ($("#sec3").html() == "")
-    sec1.innerText = sec1.innerHTML +".";
-else
-    sec3.innerText = sec3.innerHTML + ".";
+    if (!$("#sec1").html().includes("."))
+        sec1.innerText = sec1.innerHTML + ".";
+    if (!$("#sec3").html().includes("."))
+        sec3.innerText = sec3.innerHTML + ".";
 }
 
 function negativo() {
@@ -88,7 +88,7 @@ function resta(n1, n2) {
     return sec1.innerText = parseFloat(n1) - parseFloat(n2);
 }
 
-function mult(n1, n2) { 
+function mult(n1, n2) {
     return sec1.innerText = parseFloat(n1) * parseFloat(n2);
 }
 
