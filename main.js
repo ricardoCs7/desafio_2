@@ -12,26 +12,41 @@ ac.addEventListener("click", function () {
 
 
 function addValor(n) {
-
-        sec1.textContent = sec1.innerHTML + parseInt(n);
-
-
+  
+    sec1.textContent = sec1.innerHTML + parseInt(n);
+    sec3.textContent = sec1.innerHTML+ parseInt(n);
 }
 
 function addOperacion(op) {
     if (op == "+") {
         sec2.innerText = "+";
-    }if (op=="x") {
+    } if (op == "x") {
         sec2.innerText = "x";
-    }if (op=="/") {
+    } if (op == "/") {
         sec2.innerText = "/";
-    }if (op=="-") {
+    } if (op == "-") {
         sec2.innerText = "-";
     }
 
 }
 
+function resolver(n1, n2) {
+    var n1 = sec1.innerHTML;
+    var n2 = sec3.innerHTML;
+    var op = sec2.innerHTML;
 
+    if (op == "+") {
+        suma(n1, n2);
+    } if (op == "x") {
+        mult(n1, n2);
+    } if (op == "/") {
+        div(n1, n2);
+    } if (op == "-") {
+        resta(n1,n2);
+    }
+
+
+}
 
 function borrar() {
     sec3.textContent = "";

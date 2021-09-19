@@ -9,7 +9,7 @@
 }
 #pantalla{
     background-color: seashell;
-text-align: end;    font-size: 2rem;
+    text-align: end;    font-size: 2rem;
     width: 100%;
    height: 150px;
    border: greenyellow solid;
@@ -20,9 +20,9 @@ text-align: end;    font-size: 2rem;
 #panel{
 
 padding-top: 30px;
- margin-top: 20px;
- padding-bottom: 0;
-  margin-right: 0px;
+margin-top: 20px;
+padding-bottom: 0;
+margin-right: 0px;
 }
 
 .col-2{
