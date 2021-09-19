@@ -68,7 +68,7 @@ function borrar() {
 function punto() {
     if (!$("#sec1").html().includes("."))
         sec1.innerText = sec1.innerHTML + ".";
-    if (!$("#sec3").html().includes("."))
+    else if (!$("#sec3").html().includes("."))
         sec3.innerText = sec3.innerHTML + ".";
 }
 
