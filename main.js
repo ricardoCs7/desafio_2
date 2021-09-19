@@ -47,7 +47,7 @@ function resolver(n1, n2) {
     } if (op == "/") {
 
         if ($("#sec3").html() == "0")
-            alert("ERROR! no puede ser divido por 0")
+            alert("ERROR! división por 0")
         else
             div(n1, n2);
 
