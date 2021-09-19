@@ -12,9 +12,16 @@ ac.addEventListener("click", function () {
 
 
 function addValor(n) {
-  
-    sec1.textContent = sec1.innerHTML + parseInt(n);
-    sec3.textContent = sec1.innerHTML+ parseInt(n);
+
+    if ($("#sec2").html() == "")
+        sec1.textContent = sec1.innerHTML + parseInt(n);
+    else
+    
+    sec3.textContent = sec3.innerHTML + parseInt(n);
+
+
+
+
 }
 
 function addOperacion(op) {
@@ -42,7 +49,7 @@ function resolver(n1, n2) {
     } if (op == "/") {
         div(n1, n2);
     } if (op == "-") {
-        resta(n1,n2);
+        resta(n1, n2);
     }
 
 
