@@ -11,11 +11,13 @@ ac.addEventListener("click", function () {
 })
 
 
-function getValor(n) {
-    var btnNum = document.getElementById(btnNum);
-    var n = btnNum.value;
-
+function addValor(n) {
+   sec1.textContent=parseInt(n);
 }
+
+
+
+
 
 function borrar() {
     sec3.textContent = "";
@@ -26,7 +28,7 @@ function borrar() {
 btnSuma.addEventListener("click", function () {
     var n1 = 4;  //1ro valor del sec1
     var n2 = 6; //2 do valor del sec 3
-    //si el sec 2 tiene un "+":
+    //si el sec 2 tiene un "+":  HACER UN SWITCH?
     sec3.innerHTML = suma(n1, n2);
 })
 

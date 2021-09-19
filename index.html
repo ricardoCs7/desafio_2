@@ -29,13 +29,13 @@
         <div class="container" id="panel">
             <div class="row" id="numeros">
                 <div class="col-2">
-                    <button onclick="add('9')" value="9" class="btn btn-primary btn-circle btn-md">9</button>
+                    <button onclick="addValor('9')" class="btn btn-primary btn-circle btn-md">9</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnNum" value="8" class="btn btn-primary btn-circle btn-md">8</button>
+                    <button onclick="addValor('8')"  value="8" class="btn btn-primary btn-circle btn-md">8</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnNum" value="7" class="btn btn-primary btn-circle btn-md">7</button>
+                    <button onclick="addValor('7')" value="7" class="btn btn-primary btn-circle btn-md">7</button>
                 </div>
                 <div class="col-2">
                     <button id="del" class="btn btn-primary btn-circle btn-md"><i
@@ -48,36 +48,36 @@
 
             <div class="row">
                 <div class="col-2">
-                    <button id="btnNum" class="btn btn-primary btn-circle btn-md">4</button>
+                    <button onclick="addValor('4')" class="btn btn-primary btn-circle btn-md">4</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnNum" class="btn btn-primary btn-circle btn-md">5</button>
+                    <button onclick="addValor('5')" class="btn btn-primary btn-circle btn-md">5</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnNum" class="btn btn-primary btn-circle btn-md">6</button>
+                    <button onclick="addValor('6')" class="btn btn-primary btn-circle btn-md">6</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnSuma" class="btn btn-primary btn-circle btn-md">+</button>
+                    <button onclick="addOperacion('+')" id="btnSuma" class="btn btn-primary btn-circle btn-md">+</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnResta" class="btn btn-primary btn-circle btn-md">-</button>
+                    <button onclick="addOperacion('-')" id="btnResta" class="btn btn-primary btn-circle btn-md">-</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-2">
-                    <button id="1" value="1" class="btn btn-primary btn-circle btn-md">1</button>
+                    <button onclick="addValor('1')" value="1" class="btn btn-primary btn-circle btn-md">1</button>
                 </div>
                 <div class="col-2">
-                    <button id="2" value="2" class="btn btn-primary btn-circle btn-md">2</button>
+                    <button onclick="addValor('2')" value="2" class="btn btn-primary btn-circle btn-md">2</button>
                 </div>
                 <div class="col-2">
-                    <button id="3" value="3" class="btn btn-primary btn-circle btn-md">3</button>
+                    <button onclick="addValor('3')" value="3" class="btn btn-primary btn-circle btn-md">3</button>
                 </div>
                 <div class="col-2">
-                    <button id="bntMult" class="btn btn-primary btn-circle btn-md">x</button>
+                    <button onclick="addOperacion('x')" id="bntMult" class="btn btn-primary btn-circle btn-md">x</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnDiv" class="btn btn-primary btn-circle btn-md">/</button>
+                    <button onclick="addOperacion('/')" id="btnDiv" class="btn btn-primary btn-circle btn-md">/</button>
                 </div>
             </div>
             <div class="row">
@@ -85,7 +85,7 @@
                     <button id="btnNum" class="btn btn-primary btn-circle btn-md">.</button>
                 </div>
                 <div class="col-2">
-                    <button id="btnNum" class="btn btn-primary btn-circle btn-md">0</button>
+                    <button onclick="addValor('0')" class="btn btn-primary btn-circle btn-md">0</button>
                 </div>
                 <div class="col-2">
                     <button id="btnResult" class="btn btn-primary btn-circle btn-md">=</button>
