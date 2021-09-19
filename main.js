@@ -65,7 +65,12 @@ function borrar() {
     sec2.textContent = "";
     sec1.textContent = "";
 }
-
+function punto() {
+    if ($("#sec3").html() == "")
+    sec1.innerText = sec1.innerHTML +".";
+else
+    sec3.innerText = sec3.innerHTML + ".";
+}
 
 function negativo() {
     if ($("#sec3").html() == "")
@@ -76,19 +81,19 @@ function negativo() {
 
 
 function suma(n1, n2) {
-    return sec1.innerText = parseInt(n1) + parseInt(n2);
+    return sec1.innerText = parseFloat(n1) + parseFloat(n2);
 }
 
 function resta(n1, n2) {
-    return sec1.innerText = parseInt(n1) - parseInt(n2);
+    return sec1.innerText = parseFloat(n1) - parseFloat(n2);
 }
 
-function mult(n1, n2) {
-    return sec1.innerText = parseInt(n1) * parseInt(n2);
+function mult(n1, n2) { 
+    return sec1.innerText = parseFloat(n1) * parseFloat(n2);
 }
 
 function div(n1, n2) {
-    return sec1.innerText = parseInt(n1) / parseInt(n2);
+    return sec1.innerText = parseFloat(n1) / parseFloat(n2);
 }
 
 
