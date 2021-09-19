@@ -16,12 +16,7 @@ function addValor(n) {
     if ($("#sec2").html() == "")
         sec1.textContent = sec1.innerHTML + parseInt(n);
     else
-    
-    sec3.textContent = sec3.innerHTML + parseInt(n);
-
-
-
-
+        sec3.textContent = sec3.innerHTML + parseInt(n);
 }
 
 function addOperacion(op) {
@@ -30,12 +25,15 @@ function addOperacion(op) {
     } if (op == "x") {
         sec2.innerText = "x";
     } if (op == "/") {
+
         sec2.innerText = "/";
     } if (op == "-") {
         sec2.innerText = "-";
     }
 
 }
+
+
 
 function resolver(n1, n2) {
     var n1 = sec1.innerHTML;
@@ -47,11 +45,18 @@ function resolver(n1, n2) {
     } if (op == "x") {
         mult(n1, n2);
     } if (op == "/") {
-        div(n1, n2);
+
+        if ($("#sec3").html() == "0")
+            alert("ERROR! no puede ser divido por 0")
+        else
+            div(n1, n2);
+
     } if (op == "-") {
         resta(n1, n2);
     }
 
+    sec3.innerText = "";
+    sec2.innerText = "";
 
 }
 
@@ -62,20 +67,28 @@ function borrar() {
 }
 
 
+function negativo() {
+    if ($("#sec3").html() == "")
+        sec1.innerText = sec1.innerHTML * -1;
+    else
+        sec3.innerText = sec3.innerHTML * -1;
+}
+
+
 function suma(n1, n2) {
-    return parseInt(n1) + parseInt(n2);
+    return sec1.innerText = parseInt(n1) + parseInt(n2);
 }
 
 function resta(n1, n2) {
-    return parseInt(n1) - parseInt(n2);
+    return sec1.innerText = parseInt(n1) - parseInt(n2);
 }
 
 function mult(n1, n2) {
-    return parseInt(n1) * parseInt(n2);
+    return sec1.innerText = parseInt(n1) * parseInt(n2);
 }
 
 function div(n1, n2) {
-    return parseInt(n1) / parseInt(n2);
+    return sec1.innerText = parseInt(n1) / parseInt(n2);
 }
 
 

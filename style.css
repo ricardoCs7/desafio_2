@@ -17,6 +17,10 @@
  
 }
 
+#btnResult{
+    background-color: orange;
+}
+
 #panel{
 
 padding-top: 30px;
