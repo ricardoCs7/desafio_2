@@ -12,10 +12,24 @@ ac.addEventListener("click", function () {
 
 
 function addValor(n) {
-   sec1.textContent=parseInt(n);
+
+        sec1.textContent = sec1.innerHTML + parseInt(n);
+
+
 }
 
+function addOperacion(op) {
+    if (op == "+") {
+        sec2.innerText = "+";
+    }if (op=="x") {
+        sec2.innerText = "x";
+    }if (op=="/") {
+        sec2.innerText = "/";
+    }if (op=="-") {
+        sec2.innerText = "-";
+    }
 
+}
 
 
 
@@ -24,16 +38,6 @@ function borrar() {
     sec2.textContent = "";
     sec1.textContent = "";
 }
-
-btnSuma.addEventListener("click", function () {
-    var n1 = 4;  //1ro valor del sec1
-    var n2 = 6; //2 do valor del sec 3
-    //si el sec 2 tiene un "+":  HACER UN SWITCH?
-    sec3.innerHTML = suma(n1, n2);
-})
-
-
-
 
 
 function suma(n1, n2) {
